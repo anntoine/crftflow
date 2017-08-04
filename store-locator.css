@@ -76,8 +76,8 @@ a:hover {
 	    font-size: 0.8rem;
 	    font-weight: 600;
 	    text-transform: uppercase;
-	    background-repeat: no-repeat;
-	    background-image: url(https://blipstar.com/blipstarplus/viewer/geolocate.png);
+	    background-repeat: no-repeat !important;
+	    background-image: url(https://blipstar.com/blipstarplus/viewer/geolocate.png) !important;
 	    background-position: 50% 50% !important;
 	}
 
@@ -85,12 +85,12 @@ a:hover {
 INPUT[type=submit]:hover,
 INPUT[type=button]:hover {
 	background-color: #c92a2a;
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 	.btnal:hover {
 		background-color: #c92a2a;
-		opacity: 1;
+		opacity: 1 !important;
 	}
 
 
