@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #231f20;
   font-size: 16px;
   line-height: 1.5em;
@@ -26,7 +26,7 @@ a:hover {
 }
 
 .heading {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 50px;
 	text-transform: uppercase;
@@ -123,7 +123,7 @@ INPUT[type=button]:hover {
 }
 
 .storename {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	color: #000;
 	text-transform: uppercase;
