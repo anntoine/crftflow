@@ -96,7 +96,7 @@ INPUT[type=button]:hover {
 
 .btn:active,
 INPUT[type=submit]:active,
-INPUT[type=button]:hover {
+INPUT[type=button]:active {
     box-shadow: 0 0 0 0 #b0190c, inset 0 1px 2px 1px rgba(0, 0, 0, .5), 0 0 32px -2px hsla(0, 0%, 100%, .1);
     -webkit-transform: translate(0px, 3px);
     -ms-transform: translate(0px, 3px);
