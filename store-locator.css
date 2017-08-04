@@ -34,16 +34,49 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.search .btn {
-	letter-spacing: 2px;
-	padding:15px 20px;
-	border: 0px;
-	border-radius: 5px;
-	text-transform: uppercase;
+.btn,
+.search .btn,
+.search INPUT[type=submit]  {
+    min-width: 150px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #ef4135;
+    background-image: -webkit-linear-gradient(251deg, hsla(6, 55%, 69%, .9), rgba(229, 49, 30, .5) 36%, rgba(217, 50, 31, .5) 99%);
+    background-image: linear-gradient(199deg, hsla(6, 55%, 69%, .9), rgba(229, 49, 30, .5) 36%, rgba(217, 50, 31, .5) 99%);
+    box-shadow: 0 3px 0 0 #b0190c, inset 0 1px 2px 1px transparent, inset 0 18px 32px -2px hsla(0, 0%, 100%, .1);
+    -webkit-transition: color 200ms linear, background-color 300ms ease-in-out, -webkit-transform 0ms linear;
+    transition: color 200ms linear, background-color 300ms ease-in-out, -webkit-transform 0ms linear;
+    transition: color 200ms linear, background-color 300ms ease-in-out, transform 0ms linear;
+    transition: color 200ms linear, background-color 300ms ease-in-out, transform 0ms linear, -webkit-transform 0ms linear;
+    font-family: eurostile-extended, sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
+	.btn:hover,
+	.search .btn:hover,
+	.search INPUT[type=submit]:hover {
+    	background-color: #c92a2a;
+	}
+
+	.btn:active,
+	.search .btn:active,
+	.search INPUT[type=submit]:active {
+	    box-shadow: 0 0 0 0 #b0190c, inset 0 1px 2px 1px rgba(0, 0, 0, .5), 0 0 32px -2px hsla(0, 0%, 100%, .1);
+	    -webkit-transform: translate(0px, 3px);
+	    -ms-transform: translate(0px, 3px);
+	    transform: translate(0px, 3px);
+	    color: #a91400;
+	    text-shadow: 0 1px 0 hsla(0, 0%, 100%, .3);
+	}
+
 .btnal {
-    background-position: 50% 50%;
+    background-position: 50% 50% !important;
 }
 
 .result {
