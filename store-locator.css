@@ -1,9 +1,17 @@
-@import 'https://fonts.googleapis.com/css?family=Dosis:400,600|Varela';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-	font-family: 'Varela', sans-serif;
-	color: #797979;
-	background-color: #D11B1B;
+	font-family: 'Montserrat', sans-serif;
+  color: #231f20;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+
+INPUT:focus,SELECT:focus {
+    border: 0px;
 }
 
 a {
@@ -37,10 +45,6 @@ a:hover {
 .btn,
 .search .btn,
 .search INPUT[type=submit]  {
-    min-width: 150px;
-    margin-top: 30px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     padding: 15px 20px;
     border-radius: 4px;
     background-color: #ef4135;
@@ -51,7 +55,6 @@ a:hover {
     transition: color 200ms linear, background-color 300ms ease-in-out, -webkit-transform 0ms linear;
     transition: color 200ms linear, background-color 300ms ease-in-out, transform 0ms linear;
     transition: color 200ms linear, background-color 300ms ease-in-out, transform 0ms linear, -webkit-transform 0ms linear;
-    font-family: eurostile-extended, sans-serif;
     color: #fff;
     font-size: 0.8rem;
     font-weight: 600;
@@ -59,10 +62,6 @@ a:hover {
 }
 
 	.btnal {
-	    min-width: 150px;
-	    margin-top: 30px;
-	    margin-right: 10px;
-	    margin-bottom: 10px;
 	    padding: 15px 20px;
 	    border-radius: 4px;
 	    background-color: #ef4135;
@@ -73,7 +72,6 @@ a:hover {
 	    transition: color 200ms linear, background-color 300ms ease-in-out, -webkit-transform 0ms linear;
 	    transition: color 200ms linear, background-color 300ms ease-in-out, transform 0ms linear;
 	    transition: color 200ms linear, background-color 300ms ease-in-out, transform 0ms linear, -webkit-transform 0ms linear;
-	    font-family: eurostile-extended, sans-serif;
 	    color: #fff;
 	    font-size: 0.8rem;
 	    font-weight: 600;
@@ -116,6 +114,7 @@ INPUT[type=button]:hover {
 	    color: #a91400;
 	    text-shadow: 0 1px 0 hsla(0, 0%, 100%, .3);
 	}
+
 
 
 .result {
