@@ -1,0 +1,118 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis:400,600|Varela';
+
+body {
+	font-family: 'Varela', sans-serif;
+	color: #797979;
+	background-color: #D11B1B;
+}
+
+a {
+	-webkit-transition: color 400ms ease;
+	transition: color 400ms ease;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1ecfcf;
+	text-decoration: none;
+}
+
+.heading {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.search INPUT[type=text] {
+	font-size: 16px;
+	text-align: center;
+	padding:15px 20px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	box-shadow: none;
+	text-transform: uppercase;
+}
+
+.search .btn {
+	letter-spacing: 2px;
+	padding:15px 20px;
+	border: 0px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.result {
+	color: #797979;
+	margin: 20px;
+}
+
+.storename {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.storecountry {
+	display: none;
+}
+
+#resultsmain {
+	background-color: #D11B1B;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.resultsstyle #search {
+	border-radius: 5px;
+	text-align: center;
+	letter-spacing: 2px;
+	box-shadow: none;
+	text-transform: uppercase;
+}
+
+.resultsstyle .btn {
+	letter-spacing: 2px;
+	border: 0px;
+	border-radius: 5px;
+	box-shadow: none;
+	text-transform: uppercase;
+	background-color: #1ecfcf;
+}
+
+#switchbutton {
+	color: #fff;
+	letter-spacing: 2px;
+	border: 0px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: #1ecfcf;
+	box-shadow: none;
+}
+
+.directionsstyle {
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.directionsstyle .storename {
+	color: #D11B1B;
+}
+
+.directionsstyle .storeaddress, .directionsstyle .storephone {
+	color: #797979;
+}
+
+.leaflet-popup-content-wrapper {
+	background-color: #D11B1B;
+	border-radius: 5px;
+}
+
+.leaflet-popup-tip {
+	border-top: 10px solid #D11B1B;
+}
+
+#resultsmover {
+	display:none;
+}
