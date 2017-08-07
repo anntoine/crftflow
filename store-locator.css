@@ -21,29 +21,41 @@ a {
 }
 
 a:hover {
-	color: #1ecfcf;
+	color: #9e2219;
 	text-decoration: none;
 }
 
 .heading {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 50px;
-	text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.25em;
+    font-weight: 600;
+    font-size: 1.375rem;
+    word-spacing: 0.1rem;
+    text-transform: uppercase;
 }
 
-.search INPUT[type=text] {
-	font-size: 16px;
-	text-align: center;
-	padding:15px 20px;
-	letter-spacing: 2px;
-	border-radius: 5px;
-	box-shadow: none;
-	text-transform: uppercase;
+.search INPUT[type=text],
+.resultsstyle #search {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+}
+
+.searchtext {
+    font-size: 0.9rem;
+    line-height: 1.4em;
+    color: #828284;
 }
 
 .btn,
 .search .btn,
+.resultsstyle .btn,
 .search INPUT[type=submit]  {
     padding: 15px 20px;
     border-radius: 4px;
@@ -59,6 +71,7 @@ a:hover {
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 	.btnal {
@@ -76,12 +89,14 @@ a:hover {
 	    font-size: 0.8rem;
 	    font-weight: 600;
 	    text-transform: uppercase;
+	    letter-spacing: 0.1em;
 	    background-repeat: no-repeat !important;
 	    background-image: url(https://blipstar.com/blipstarplus/viewer/geolocate.png) !important;
 	    background-position: 50% 50% !important;
 	}
 
 .btn:hover,
+.resultsstyle .btn:hover, 
 INPUT[type=submit]:hover,
 INPUT[type=button]:hover {
 	background-color: #c92a2a;
@@ -95,6 +110,7 @@ INPUT[type=button]:hover {
 
 
 .btn:active,
+.resultsstyle .btn:active,
 INPUT[type=submit]:active,
 INPUT[type=button]:active {
     box-shadow: 0 0 0 0 #b0190c, inset 0 1px 2px 1px rgba(0, 0, 0, .5), 0 0 32px -2px hsla(0, 0%, 100%, .1);
@@ -118,52 +134,44 @@ INPUT[type=button]:active {
 
 
 .result {
-	color: #797979;
-	margin: 20px;
+    margin: 20px;
+    border-radius: 0em;
+    margin: 0px;
+    padding: 15px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+.resultnav {
+    padding-bottom: 20px;
+}
+
+.storedist {
+    margin:0px;
+    margin-top: 3px;
 }
 
 .storename {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	color: #000;
-	text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #ef4135;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
 }
 
 .storecountry {
 	display: none;
 }
 
-#resultsmain {
-	background-color: #D11B1B;
-	border-radius: 5px;
-	color: #fff;
-}
-
-.resultsstyle #search {
-	border-radius: 5px;
-	text-align: center;
-	letter-spacing: 2px;
-	box-shadow: none;
-	text-transform: uppercase;
-}
-
-.resultsstyle .btn {
-	letter-spacing: 2px;
-	border: 0px;
-	border-radius: 5px;
-	box-shadow: none;
-	text-transform: uppercase;
-	background-color: #1ecfcf;
-}
-
 #switchbutton {
-	color: #fff;
-	letter-spacing: 2px;
-	border: 0px;
-	border-radius: 5px;
-	text-transform: uppercase;
-	background-color: #1ecfcf;
-	box-shadow: none;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+	background-color: #ef4135;
+    box-shadow: none;
 }
 
 .directionsstyle {
@@ -180,12 +188,19 @@ INPUT[type=button]:active {
 }
 
 .leaflet-popup-content-wrapper {
-	background-color: #D11B1B;
 	border-radius: 5px;
 }
 
 .leaflet-popup-tip {
 	border-top: 10px solid #D11B1B;
+}
+
+.result.priority.iwindow {
+    border: 0px;
+}
+
+.result.priority.iwindow .storedist {
+    margin-top: 13px;
 }
 
 #resultsmover {
